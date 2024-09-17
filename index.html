@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Chess</title>
+
+    <link rel="stylesheet" href="stylesheets/main.css">
+    
+    <script src="scripts/enums/color.js" defer></script>
+    <script src="scripts/enums/types.js" defer></script>
+    
+    <script src="scripts/utils.js" defer></script>
+    
+    <script src="scripts/board.js" defer></script>
+
+    <script src="scripts/pieces/piece.js" defer></script>
+    <script src="scripts/pieces/king.js" defer></script>
+    <script src="scripts/pieces/queen.js" defer></script>
+    <script src="scripts/pieces/bishop.js" defer></script>
+    <script src="scripts/pieces/knight.js" defer></script>
+    <script src="scripts/pieces/rook.js" defer></script>
+    <script src="scripts/pieces/pawn.js" defer></script>
+    
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="chess-board">
+            <ul class="chess-board-row" cell-row="1">
+                <li class="chess-board-cell" cell-col="1"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="2"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="3"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="4"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="5"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="6"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="7"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="8"><span class="piece"></span></li>
+            </ul>
+            <ul class="chess-board-row" cell-row="2">
+                <li class="chess-board-cell" cell-col="1"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="2"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="3"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="4"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="5"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="6"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="7"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="8"><span class="piece"></span></li>
+            </ul>
+            <ul class="chess-board-row" cell-row="3">
+                <li class="chess-board-cell" cell-col="1"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="2"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="3"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="4"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="5"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="6"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="7"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="8"><span class="piece"></span></li>
+            </ul>
+            <ul class="chess-board-row" cell-row="4">
+                <li class="chess-board-cell" cell-col="1"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="2"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="3"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="4"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="5"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="6"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="7"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="8"><span class="piece"></span></li>
+            </ul>
+            <ul class="chess-board-row" cell-row="5">
+                <li class="chess-board-cell" cell-col="1"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="2"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="3"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="4"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="5"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="6"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="7"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="8"><span class="piece"></span></li>
+            </ul>
+            <ul class="chess-board-row" cell-row="6">
+                <li class="chess-board-cell" cell-col="1"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="2"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="3"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="4"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="5"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="6"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="7"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="8"><span class="piece"></span></li>
+            </ul>
+            <ul class="chess-board-row" cell-row="7">
+                <li class="chess-board-cell" cell-col="1"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="2"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="3"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="4"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="5"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="6"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="7"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="8"><span class="piece"></span></li>
+            </ul>
+            <ul class="chess-board-row" cell-row="8">
+                <li class="chess-board-cell" cell-col="1"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="2"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="3"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="4"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="5"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="6"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="7"><span class="piece"></span></li>
+                <li class="chess-board-cell" cell-col="8"><span class="piece"></span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

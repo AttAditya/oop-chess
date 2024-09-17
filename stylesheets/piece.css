@@ -1,0 +1,38 @@
+[piece-color="WHITE"] {
+    background-position-y: top;
+}
+
+[piece-color="BLACK"] {
+    background-position-y: bottom;
+}
+
+[piece-type] {
+    background-image: var(--piece-spritesheet);
+    background-size: var(--piece-size);
+    background-position-x: -20rem;
+}
+
+[piece-type="KING"] {
+    background-position-x: var(--piece-position-king);
+}
+
+[piece-type="QUEEN"] {
+    background-position-x: var(--piece-position-queen);
+}
+
+[piece-type="BISHOP"] {
+    background-position-x: var(--piece-position-bishop);
+}
+
+[piece-type="KNIGHT"] {
+    background-position-x: var(--piece-position-knight);
+}
+
+[piece-type="ROOK"] {
+    background-position-x: var(--piece-position-rook);
+}
+
+[piece-type="PAWN"] {
+    background-position-x: var(--piece-position-pawn);
+}
+

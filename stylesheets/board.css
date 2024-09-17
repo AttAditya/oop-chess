@@ -1,0 +1,24 @@
+.chess-board {
+    border-width: var(--board-border-thickness);
+    border-style: var(--board-border-style);
+    border-color: var(--board-border-color);
+}
+
+.chess-board-row {
+    display: flex;
+    list-style: none;
+}
+
+.chess-board-cell {
+    display: block;
+    width: var(--cell-size);
+    height: auto;
+    aspect-ratio: 1;
+    background-color: var(--cell-light-color);
+}
+
+.chess-board-row:nth-child(odd) .chess-board-cell:nth-child(odd),
+.chess-board-row:nth-child(even) .chess-board-cell:nth-child(even) {
+    background-color: var(--cell-dark-color);
+}
+

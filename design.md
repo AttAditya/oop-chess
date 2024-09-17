@@ -1,0 +1,32 @@
+=== CHESS - GAME DESIGN ===
+
+=== ENTITIES ===
+- Board
+- Piece
+    - IsAlive
+    - Position
+    - Color
+        - Black
+        - White
+    - Type
+        - King
+        - Queen
+        - Rook
+        - Bishop
+        - Knight
+        - Pawn
+    - Methods
+        - Move
+        - Kill
+- Player
+    - Color
+    - Pieces
+    - Methods
+        - Move
+        - Turn
+- Game
+    - Status
+    - HasOneBoard
+    - HasManyPlayers
+    - HasManyPieces
+    - Winner

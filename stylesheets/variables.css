@@ -1,0 +1,22 @@
+:root {
+    --page-background-color: darkslategray;
+
+    --board-border-thickness: 1rem;
+    --board-border-style: solid;
+    --board-border-color: black;
+
+    --cell-size: 4rem;
+    --cell-light-color: beige;
+    --cell-dark-color: saddlebrown;
+    
+    --piece-spritesheet: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Chess_Pieces_Sprite.svg/800px-Chess_Pieces_Sprite.svg.png");
+    --piece-size: 24rem;
+    
+    --piece-position-pawn: -20rem;
+    --piece-position-rook: -16rem;
+    --piece-position-knight: -12rem;
+    --piece-position-bishop: -8rem;
+    --piece-position-queen: -4rem;
+    --piece-position-king: 0rem;
+}
+
